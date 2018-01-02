@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "Canvas Defender"
+  },
+  "appDesc": {
+    "message": "Вместо того что бы блокировать вызовы JS-API, Canvas Defender создаёт уникальный и постоянный шум, который скрывает ваш реальный canvas fingerprint"
+  }
+}

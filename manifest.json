@@ -1,0 +1,35 @@
+{
+  "name": "__MSG_appName__",
+  "version" : "1.1.0",
+  "description": "__MSG_appDesc__",
+   "permissions": [ "webNavigation", "tabs", "storage", "notifications", "http://*/*", "https://*/*"],
+  "icons": { "16": "img/16x16.png", "48": "img/48x48.png", "128": "img/128x128.png" },
+  "browser_action": {
+    "default_icon": "img/16x16.png",
+    "default_title": "Create & use new canvas fingerprint",
+    "default_popup": "html/panel.html"
+  },
+  "background": {
+    "scripts": [
+      "js/md5.js",
+      "js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["*://*/*"],
+      "js": ["js/content.js"],
+      "all_frames": true
+    }
+  ],
+  "options_page": "html/options.html",
+  "default_locale": "en",
+  "manifest_version": 2,
+  "applications": {
+    "gecko": {
+      "id": "@canvas-shadow",
+      "strict_min_version": "42.0"
+    }
+  }
+}

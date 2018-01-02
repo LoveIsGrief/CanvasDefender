@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extension Options</title>
+    <script src="../js/options.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <label>Whitelist:</label><br>
+    <textarea id="whitelist" rows="10" cols="100" placeholder="Domains or URLs, where <canvas> function should never be blocked. Separate multiple 
+entries by commas"></textarea><br>
+    <span>Select a time interval to automatically change canvas fingerprint</span><br>
+    <select id="timer">
+      <option value="-1">
+        Never
+      </option>
+      <option value="1">
+        Every minute
+      </option>
+      <option value="5">
+        Every 5 minutes
+      </option>
+      <option value="15">
+        Every 15 minutes
+      </option>
+      <option value="30">
+        Every 30 minutes
+      </option>
+      <option value="60">
+        Every hour
+      </option>
+      <option value="180">
+        Every 3 hours
+      </option>
+      <option value="360">
+        Every 6 hours
+      </option>
+      <option value="1440">
+        Every 24 hours
+      </option>
+      <option value="10080">
+        Every week
+      </option>
+    </select>
+    <br><br>
+    <button id="save">Save</button>
+
+  </body>
+</html>

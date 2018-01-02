@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/style.css"/>
+    <script src="../js/panel.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="content">
+    <!-- <h2>Canvas Defender</h2> -->
+    <img id="logo" src="../img/CanvasDefender horizontal logo.png">
+    <p id="noise_info">
+        Current canvas noise hash <br>
+        <div id="active">
+            <b>#<span id="data_hash"></span></b><br>
+            <span>Last changed: <span id="latest_changed"></span> <span id="schedule_wrap">(Scheduled change: <span id="schedule"></span>)</span></span>
+        </div>
+        <b id="inactive">Canvas Defender is inactive</b>
+    </p>
+    <button type="button" id="generate_fingerprint">Generate new noise</button>
+    <button type="button" id="disable">Stop Adding Noise</button>
+    <br/>
+    <br/>
+    <p>
+        Changing canvas fingerprint only is not enough to prevent fingerprinting of your browser completely. For an all-in one solution check out <a id="info_url" href="javascript:void(0);" >Multiloginapp</a>. It's free.
+    </p>
+    <br/>
+    <span>
+        <a id="option_url" href="javascript:void(0);" >Show add-on options</a>
+    </span>
+</div>
+
+</body>
+</html>
